@@ -1,38 +1,54 @@
-acceptAll: Tillad alle
-acceptSelected: Tillad udvalgte
-service:
-    disableAll:
-        description: Brug denne kontakt til at aktivere/deaktivere alle apps.
-        title: Aktiver/deaktiver alle applikatione
-    optOut:
-        description: Denne applikation indlæses som standard (men du kan deaktivere den)
-        title: Opt-Out
-    purpose: Formål
-    purposes: Formål
-    required:
-        description: Denne applikation er altid nødvendig
-        title: (Altid nødvendig)
-close: Luk
+privacyPolicy:
+  name: privatlivspolitik
+  text: Du kan se mere om vores privatlivspolitik ved at læse vores <tr-hint v="privacy policy">{privacyPolicy}</tr-hint>.
 consentModal:
-    description: Her kan du se og ændre, hvilke informationer vi gemmer om dig.
-    privacyPolicy:
-        name: Flere informationer finde du under {privacyPolicy}
-        text: databeskyttelseserklæring.
-    title: Informationer, som vi gemmer
+  title: Tjenester vi ønsker at benytte
+  description: Her kan du se hvilke tjenester vi ønsker at benytte på vores hjemmeside. Det er dig der bestemmer! Aktiver eller de-aktiver tjenester som du vil.
 consentNotice:
-    changeDescription: Der har været ændringer siden dit sidste besøg. Opdater dit valg.
-    description:
-        'Vi gemmer og behandler dine personlige oplysninger til følgende formål:
-        {purposes}.'
-    imprint:
-        name: ''
-    learnMore: Læs mere
-    privacyPolicy:
-        name: Datenschutzerklärung
-decline: Afvis
-ok: Ok
-poweredBy: Realiseret med Klaro!
+  testing: Testtilstand
+  title: Samtykke til cookies
+  changeDescription: Der er sket ændringer siden dit sidste beesøg. Venligst opdater dit samtykke.
+  description: 'Vi vil gerne tilføje nogle ekstre tjenester for at forbedre {purposes}? Du kan altid ændre eller tilbagetrække dit samtykke senere.'
+  learnMore|capitalize: Lad mig vælge
+purposes:
+  functional:
+    title|capitalize: Strengt nødvendige
+    description: |
+      Disse tjenester er nødvendige for at hjemmesiden fungere. Siden ville ikke fungere uden disse tjenester.
+  performance:
+    title|capitalize: Optimering af ydelse
+    description: |
+      Disse tjenester får siden til at fungere bedre rent teknisk.
+  marketing:
+    title|capitalize: Markedsføring
+    description: Disse tjenester behandler dine personlige data for at give dig relevant indhold omkring produkter, tjenester eller emner som du generelt er interesseret i.
+  advertising:
+    title|capitalize: Annoncering
+    description: Disse tjenester behandler dine personlige for at give dig mere relevante annoncer.
 purposeItem:
-    service: ''
-    services: ''
-save: Gem
+  # we give some additional context for the translation API so it can pick the right word
+  service: En enkel <tr-snip>tjeneste</tr-snip> som jeg installerer på mit system.
+  services: Flere enkle <tr-snip>tjenester</tr-snip> som jeg installerer på mit system.
+ok|capitalize: det er OK
+save|capitalize: gem
+decline|capitalize: afvis
+close|capitalize: luk
+acceptAll|capitalize: godkend alle
+acceptSelected|capitalize: godkend udvalgte
+service:
+  disableAll:
+    title|capitalize: tillad eller afvis alle tjenester
+    description: Brug denne kontakt for at tillade eller afvise alle tjenester
+  optOut:
+    title: (fravælg)
+    description: Denne tjeneste benyttes som standard (men du kan fravælge den)
+  required:
+    title: (altid nødvendig)
+    description: Denne tjeneste er altid nødvendig
+  purposes: Behandler <tr-snip>formål</tr-snip>
+  purpose: Behandler <tr-snip>formål</tr-snip>
+poweredBy: Skabt med Klaro!
+contextualConsent:
+  description: Vil du læse eksternt indhold leveret af {title}?
+  acceptOnce: Ja
+  acceptAlways: Altid
